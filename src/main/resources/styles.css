@@ -1,0 +1,19 @@
+.root {
+    -fx-base: rgb(48, 48, 48);
+    -fx-background: rgb(48, 48, 48);
+    -fx-control-inner-background: rgb(50, 50, 50);
+}
+
+.messages .list-cell {
+    -fx-padding: 0 ;
+}
+
+.message {
+    -fx-padding: 4;
+}
+.message.error {
+    -fx-background-color: #fc9797;
+}
+.message.info {
+    -fx-background-color: #93fc62;
+}
