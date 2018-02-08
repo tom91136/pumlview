@@ -1,26 +1,17 @@
 package net.kurobako.puml
 
-import java.io.{ByteArrayInputStream, ByteArrayOutputStream}
-
-import net.kurobako.puml.editor.CodePane
-import net.sourceforge.plantuml.syntax.SyntaxChecker
-import net.sourceforge.plantuml.{FileFormat, FileFormatOption, SourceStringReader}
-import org.fxmisc.easybind.EasyBind
 import better.files._
+import net.kurobako.puml.editor.CodePane
+import org.fxmisc.easybind.EasyBind
+import org.fxmisc.easybind.monadic.MonadicBinding
 
-import scala.collection.JavaConverters._
-import scala.util.{Failure, Try}
 import scalafx.Includes._
 import scalafx.beans.property.ObjectProperty
 import scalafx.geometry.Orientation
 import scalafx.scene.Node
-import scalafx.scene.control._
-import scalafx.scene.image.Image
-import scalafx.scene.layout.{Priority, VBox}
-import better.files._
-import org.fxmisc.easybind.monadic.MonadicBinding
-
 import scalafx.scene.control.Alert.AlertType
+import scalafx.scene.control._
+import scalafx.scene.layout.{Priority, VBox}
 import scalafx.stage.FileChooser
 import scalafx.stage.FileChooser.ExtensionFilter
 
